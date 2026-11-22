@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoon World</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff69a6, #a66cff);
+    padding: 22px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+nav {
+    background: #713c91;
+    padding: 16px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffb6d5;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 15px;
+    background: #f0ddff;
+}
+
+.hero h2 {
+    color: #853f9f;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.gallery {
+    padding: 35px 6%;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #a33e80;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 15px #d9b6d5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #a33e80;
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: #666;
+}
+
+footer {
+    background: #713c91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎀 Cartoon World 🎀</h1>
+    <p>Your Favorite Cartoon Collection</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to Cartoon World!</h2>
+    <p>Explore your favorite cartoon characters in one place.</p>
+</section>
+
+<section class="gallery" id="collection">
+    <h2>✨ Our Cartoon Collection ✨</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=500" alt="Mickey Mouse">
+            <h3>Mickey Mouse</h3>
+            <p>A famous and cheerful cartoon character.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=500" alt="Tom and Jerry">
+            <h3>Tom and Jerry</h3>
+            <p>A funny cat and mouse duo.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500" alt="Frozen">
+            <h3>Frozen</h3>
+            <p>A magical world of ice and adventure.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=500" alt="SpongeBob">
+            <h3>SpongeBob</h3>
+            <p>A funny sea sponge full of energy.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500" alt="Barbie">
+            <h3>Barbie</h3>
+            <p>A world of creativity and imagination.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=500" alt="Kung Fu Panda">
+            <h3>Kung Fu Panda</h3>
+            <p>A fun adventure with Po.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="hero" id="about">
+    <h2>About Cartoon World</h2>
+    <p>We celebrate the fun, creativity and magic of cartoons!</p>
+</section>
+
+<footer>
+    <p>© 2026 Cartoon World | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
